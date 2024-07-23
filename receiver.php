@@ -1,5 +1,8 @@
 <?php
 
+$text = $_POST['txt'];
+$badword = $_POST['badword'];
+
 
 ?>
 
@@ -14,6 +17,9 @@
 
 <body>
 
+<div><?php echo $text ?></div>
+
+<div><?php echo $badword ?></div>
 </body>
 
 </html>
