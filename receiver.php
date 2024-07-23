@@ -15,17 +15,20 @@ $text_replaced_length = strlen($text_replaced);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+<div class="container">
+    <h2>Testo originale</h2>
+    <div><?php echo $text ?></div>
+    <h4>Il testo ha: <?php echo $text_length ?> caratteri</h4>
 
-<div><?php echo $text ?></div>
+    <h2>Testo censurato</h2>
+    <div><?php echo $text_replaced ?></div>
+    <h4>Il testo modificato ha: <?php echo $text_replaced_length ?> caratteri</h4>
+</div>
 
-<div><?php echo $text_length ?></div>
-
-<div><?php echo $text_replaced ?></div>
-
-<div><?php echo $text_replaced_length ?></div>
 
 </body>
 
