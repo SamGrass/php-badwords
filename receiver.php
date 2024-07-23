@@ -3,7 +3,9 @@
 $text = $_POST['txt'];
 $badword = $_POST['badword'];
 
-
+$text_length = strlen($text);
+$text_replaced = str_replace($badword, '***', $text); 
+$text_replaced_length = strlen($text_replaced);
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +21,11 @@ $badword = $_POST['badword'];
 
 <div><?php echo $text ?></div>
 
-<div><?php echo $badword ?></div>
+<div><?php echo $text_length ?></div>
+
+<div><?php echo $text_replaced ?></div>
+
+<div><?php echo $text_replaced_length ?></div>
 </body>
 
 </html>
