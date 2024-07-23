@@ -26,6 +26,7 @@ $text_replaced_length = strlen($text_replaced);
 <div><?php echo $text_replaced ?></div>
 
 <div><?php echo $text_replaced_length ?></div>
+
 </body>
 
 </html>
